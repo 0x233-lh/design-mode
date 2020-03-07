@@ -1,5 +1,8 @@
-package commandMode;
+package commandMode.command;
 
+
+import commandMode.receiver.ConcreteReceiver2;
+import commandMode.receiver.Receiver;
 
 /**
  * @author lianghong
@@ -8,16 +11,18 @@ package commandMode;
 public class ConcreteCommand2 extends Command {
 
     /**
-     *  对哪一个Receiver类进行命令处理
+     * 设置自己默认的接受者
      */
-    private Receiver receiver;
+    public ConcreteCommand2() {
+        super(new ConcreteReceiver2());
+    }
 
     /**
-     * 传递接受者
+     * 设置自己的接受者
      * @param receiver
      */
     public ConcreteCommand2(Receiver receiver) {
-        this.receiver = receiver;
+        super(receiver);
     }
 
     /**

@@ -1,4 +1,4 @@
-package commandMode;
+package commandMode.receiver;
 
 /**
  * @author lianghong

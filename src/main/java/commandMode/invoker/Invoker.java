@@ -1,4 +1,6 @@
-package commandMode;
+package commandMode.invoker;
+
+import commandMode.command.Command;
 
 /**
  * @author lianghong

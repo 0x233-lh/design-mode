@@ -1,4 +1,4 @@
-package commandMode;
+package commandMode.receiver;
 
 /**
  * 具体的Receiver
@@ -10,6 +10,6 @@ public class ConcreteReceiver2 extends Receiver {
 
     @Override
     public void doSomething() {
-        // 需要处理一定的业务
+        System.out.println("ConcreteReceiver2：我做了某些事情了！！");
     }
 }
